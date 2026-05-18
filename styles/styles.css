@@ -191,6 +191,64 @@
   /* misc */
   --header-height: 64px;
   --breadcrumb-height: 24px;
+
+  /* ============================================
+     BRAZIL WORLD CUP THEME — Color Tokens
+     ============================================ */
+  --color-brazil-green: #009C3B;
+  --color-brazil-green-dark: #007A2F;
+  --color-brazil-green-light: #00C44A;
+  --color-brazil-yellow: #FFDF00;
+  --color-brazil-yellow-dark: #CDB200;
+  --color-brazil-blue: #002776;
+  --color-brazil-blue-light: #1A3D99;
+  --color-brazil-white: #FFFFFF;
+
+  /* ============================================
+     BRAZIL WORLD CUP THEME — Brand Overrides
+     ============================================ */
+  --color-brand: var(--color-brazil-yellow);
+  --color-brand-primary: var(--color-brazil-yellow);
+  --color-brand-primary-hover: var(--color-brazil-yellow-dark);
+  --color-brand-secondary: var(--color-brazil-green);
+  --color-brand-secondary-hover: var(--color-brazil-green-dark);
+  --color-background: #FAFFF5;
+  --color-link: var(--color-brazil-blue);
+  --color-link-hover: var(--color-brazil-blue-light);
+  --color-heading: var(--color-brazil-blue);
+  --color-button-background: var(--color-brazil-green);
+  --color-button-color: var(--color-brazil-white);
+  --color-button-background-hover: var(--color-brazil-green-dark);
+  --color-button-primary-background: var(--color-brazil-yellow);
+  --color-button-primary-color: var(--color-brazil-blue);
+  --color-button-primary-background-hover: var(--color-brazil-yellow-dark);
+
+  /* ============================================
+     BRAZIL WORLD CUP THEME — Section Tokens
+     ============================================ */
+  --color-token-brazil-green: var(--color-brazil-green);
+  --color-token-brazil-yellow: var(--color-brazil-yellow);
+  --color-token-brazil-blue: var(--color-brazil-blue);
+}
+
+/* ============================================
+   BRAZIL WORLD CUP THEME — Hero Overlay
+   ============================================ */
+.hero::after {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 156, 59, 0.55) 0%,
+    rgba(0, 39, 118, 0.45) 100%
+  );
+}
+
+/* ============================================
+   BRAZIL WORLD CUP THEME — Dark Section
+   ============================================ */
+[data-section-style~="dark-scheme"] {
+  --color-background-section: var(--color-brazil-blue);
+  --color-text: var(--color-brazil-white);
+  --color-heading: var(--color-brazil-yellow);
 }
 
 .light-scheme {
