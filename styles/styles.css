@@ -215,7 +215,7 @@
   --color-background: #FAFFF5;
   --color-link: var(--color-brazil-blue);
   --color-link-hover: var(--color-brazil-blue-light);
-  --color-heading: var(--color-brazil-blue);
+  --color-heading: light-dark(var(--color-brazil-blue), var(--color-brazil-yellow));
   --color-button-background: var(--color-brazil-green);
   --color-button-color: var(--color-brazil-white);
   --color-button-background-hover: var(--color-brazil-green-dark);
@@ -391,6 +391,7 @@ h5,
 h6 {
   font-weight: 600;
   line-height: var(--heading-line-height);
+  color: var(--color-heading);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
