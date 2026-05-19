@@ -60,8 +60,8 @@
   --grid-column-width: calc(var(--grid-container-width) / 12);
   --grid-gutter-width: 8.3%;
 
-  /* spacing */
-  --spacing-xxl: 48px;
+  /* spacing — balanced tier (64px section padding per direction) */
+  --spacing-xxl: 64px;
   --spacing-xl: 32px;
   --spacing-l: 24px;
   --spacing-m: 12px;
@@ -169,14 +169,14 @@
   /* fonts */
   --font-family: montserrat, "Trebuchet MS", sans-serif;
 
-  /* headings */
-  --heading-font-size-xxl: 32.44px;
-  --heading-font-size-xl: 28.83px;
-  --heading-font-size-l: 25.63px;
-  --heading-font-size-m: 22.78px;
-  --heading-font-size-s: 20.25px;
-  --heading-font-size-xs: 18px;
-  --heading-line-height: 1.15;
+  /* headings — 1.25 scale ratio per DESIGN.md */
+  --heading-font-size-xxl: clamp(2rem, 3vw + 1rem, 3.052rem); /* 48.83px */
+  --heading-font-size-xl: clamp(1.75rem, 2.5vw + 0.75rem, 2.441rem); /* 39.06px */
+  --heading-font-size-l: clamp(1.5rem, 2vw + 0.5rem, 1.953rem); /* 31.25px */
+  --heading-font-size-m: 1.563rem; /* 25px */
+  --heading-font-size-s: 1.25rem;  /* 20px */
+  --heading-font-size-xs: 1rem;    /* 16px */
+  --heading-line-height: 1.1;
 
   /* body */
   --body-font-size-xxxl: 25px;
@@ -204,6 +204,13 @@
   --color-brazil-blue-light: #1A3D99;
   --color-brazil-white: #FFFFFF;
 
+  /* OKLCH semantic tokens */
+  --color-verde: oklch(57% 0.165 145);
+  --color-amarelo: oklch(91% 0.185 95);
+  --color-azul: oklch(22% 0.095 265);
+  --color-surface: oklch(97% 0.004 145);
+  --color-text-on-dark: oklch(99% 0 0);
+
   /* ============================================
      BRAZIL WORLD CUP THEME — Brand Overrides
      ============================================ */
@@ -212,7 +219,7 @@
   --color-brand-primary-hover: var(--color-brazil-yellow-dark);
   --color-brand-secondary: var(--color-brazil-green);
   --color-brand-secondary-hover: var(--color-brazil-green-dark);
-  --color-background: #FAFFF5;
+  --color-background: oklch(99% 0 0);
   --color-link: var(--color-brazil-blue);
   --color-link-hover: var(--color-brazil-blue-light);
   --color-heading: light-dark(var(--color-brazil-blue), var(--color-brazil-yellow));
@@ -312,7 +319,7 @@ a {
   }
 
   &.btn-accent {
-    color: #fff;
+    color: var(--color-brazil-blue);
     background: var(--color-accent);
     border: 2px solid var(--color-accent);
 
@@ -389,17 +396,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
   line-height: var(--heading-line-height);
   color: var(--color-heading);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 { font-size: var(--heading-font-size-xxl); font-variation-settings: "wght" 900; }
+h2 { font-size: var(--heading-font-size-xl); font-variation-settings: "wght" 800; }
+h3 { font-size: var(--heading-font-size-l); font-variation-settings: "wght" 700; }
+h4 { font-size: var(--heading-font-size-m); font-variation-settings: "wght" 700; }
+h5 { font-size: var(--heading-font-size-s); font-variation-settings: "wght" 600; }
+h6 { font-size: var(--heading-font-size-xs); font-variation-settings: "wght" 600; }
 
 strong {
   font-weight: 600;
