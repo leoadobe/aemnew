@@ -1,5 +1,8 @@
 import { loadArea, setConfig } from './ak.js';
 
+const savedScheme = localStorage.getItem('color-scheme');
+if (savedScheme) document.body.classList.add(savedScheme);
+
 const hostnames = ['authorkit.dev'];
 
 const locales = {

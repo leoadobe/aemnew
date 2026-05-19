@@ -226,6 +226,7 @@ header {
     .main-nav-link {
       display: block;
       line-height: 64px;
+      color: #fff;
     }
 
     .menu,
@@ -250,6 +251,7 @@ header {
     max-height: initial;
     overflow: initial;
     bottom: 0;
+    background-color: var(--color-brazil-blue);
 
     .header-content {
       height: 100%;

@@ -219,6 +219,7 @@
   --color-brand-primary-hover: var(--color-brazil-yellow-dark);
   --color-brand-secondary: var(--color-brazil-green);
   --color-brand-secondary-hover: var(--color-brazil-green-dark);
+  --color-accent: var(--color-brazil-yellow);
   --color-background: oklch(99% 0 0);
   --color-link: var(--color-brazil-blue);
   --color-link-hover: var(--color-brazil-blue-light);
@@ -264,6 +265,15 @@
 
 .dark-scheme {
   color-scheme: dark;
+}
+
+body.dark-scheme {
+  --color-background: oklch(8% 0.05 145);
+  --color-text: var(--color-text-on-dark);
+  --color-heading: var(--color-brazil-yellow);
+  --color-link: var(--color-brazil-yellow);
+
+  background-color: var(--color-background);
 }
 
 .section.dark-scheme {
