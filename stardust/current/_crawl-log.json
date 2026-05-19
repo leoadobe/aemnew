@@ -1,0 +1,34 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-05-18T23:16:26.664Z",
+    "stardustVersion": "0.7.1"
+  },
+  "discovery": {
+    "originUrl": "https://main--aemnew--leoadobe.aem.page/",
+    "sitemapUrl": "https://main--aemnew--leoadobe.aem.page/sitemap.xml",
+    "sitemapFound": true,
+    "totalDiscovered": 1,
+    "fetchTechnique": "playwright-headless",
+    "consent": {
+      "method": "none-needed"
+    }
+  },
+  "cap": 5,
+  "selected": ["/"],
+  "filteredAsJunk": [],
+  "crawl": {
+    "pages": [
+      {
+        "slug": "home",
+        "path": "/",
+        "waitMode": "medium",
+        "waitMs": 2380,
+        "fetchedAt": "2026-05-18T23:16:26.664Z",
+        "httpStatus": 200,
+        "live": true
+      }
+    ],
+    "failures": []
+  }
+}

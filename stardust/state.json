@@ -1,0 +1,43 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "writtenAt": "2026-05-18T23:30:00Z",
+    "stardustVersion": "0.7.1"
+  },
+  "site": {
+    "originUrl": "https://main--aemnew--leoadobe.aem.page/",
+    "extractedAt": "2026-05-18T23:16:26.664Z",
+    "pageCap": 5,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-05-18T23:30:00Z",
+    "prototypedAt": "2026-05-18T23:55:00Z",
+    "approvedAt": "2026-05-18T23:58:00Z",
+    "phrase": "i have a challenge, this year we will have the world cup and i would like to change my design to reflect the world cup, especialli the brazilian national team, the most winner of the championship. i would like to emphasize brazilian colors and vibe to transmit the idea of world cup to the brazilian audience",
+    "directionFile": "stardust/direction.md",
+    "mode": "targeted-palette-rebrand",
+    "iaFidelity": "verbatim",
+    "density": "balanced"
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "path": "/",
+      "type": "landing",
+      "status": "approved",
+      "stale": false,
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-proposed.html",
+      "migratedPath": null,
+      "_provenance": {
+        "renderedBy": "playwright",
+        "fetchedAt": "2026-05-18T23:16:26.664Z",
+        "waitMs": 2380,
+        "waitMode": "medium",
+        "httpStatus": 200
+      }
+    }
+  ]
+}

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- _provenance:
+    writtenBy: impeccable:craft
+    writtenAt: 2026-05-18T23:50:00Z
+    page: home
+    direction: Brazil World Cup (stardust/direction.md 2026-05-18)
+    iaFidelity: verbatim
+    density: balanced
+    mode: targeted-palette-rebrand
+    stardustVersion: 0.7.1
+    capturedSourceLineage: all content from stardust/current/pages/home.json
+    unsourcedContent: [section-10-eyebrow "VAMOS", section-10-headline "O Jogo Bonito começa aqui." (direction-authorized rewrite — CTA band had no heading in captured source)]
+    cardBorderNote: ds-card left-border is explicit DESIGN.md specification (Brazilian flag geometry motif) — project-level override of general heuristic
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil Goes for the Championship</title>
+  <meta name="description" content="The Seleção is back. Six stars on the shirt, one dream in the heart.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Brazilian national palette — OKLCH */
+      --color-verde: oklch(57% 0.165 145);        /* #009C3B */
+      --color-amarelo: oklch(91% 0.185 95);       /* #FFDF00 */
+      --color-azul: oklch(22% 0.095 265);         /* #002776 */
+      --color-background: oklch(99% 0 0);         /* near-white */
+      --color-surface: oklch(97% 0.004 145);      /* verde-tinted surface */
+      --color-text: oklch(18% 0 0);               /* near-black body text */
+      --color-text-on-dark: oklch(99% 0 0);       /* white on azul */
+
+      /* Semantic aliases */
+      --color-brand: var(--color-verde);
+      --color-accent: var(--color-amarelo);
+      --color-deep: var(--color-azul);
+
+      /* Typography */
+      --font-family: 'Montserrat', 'Trebuchet MS', Arial, sans-serif;
+      --fvs-display: "wght" 900;
+      --fvs-heading: "wght" 800;
+      --fvs-subheading: "wght" 700;
+      --fvs-semibold: "wght" 600;
+      --fvs-body: "wght" 400;
+
+      --size-h1: clamp(2.5rem, 4vw + 1rem, 3.052rem);  /* ~48.83px */
+      --size-h2: clamp(2rem, 3vw + 0.8rem, 2.441rem);  /* ~39.06px */
+      --size-h3: clamp(1.6rem, 2vw + 0.6rem, 1.953rem); /* ~31.25px */
+      --size-h4: 1.563rem;                              /* 25px */
+      --size-h5: 1.25rem;                               /* 20px */
+      --size-body: 1rem;                                /* 16px */
+      --size-small: 0.875rem;                           /* 14px */
+      --size-badge: 0.75rem;                            /* 12px */
+
+      --lh-heading: 1.1;
+      --lh-body: 1.6;
+
+      /* Spacing — 4pt base */
+      --space-xs: 0.25rem;   /* 4px */
+      --space-s: 0.5rem;     /* 8px */
+      --space-m: 0.75rem;    /* 12px */
+      --space-l: 1.5rem;     /* 24px */
+      --space-xl: 2rem;      /* 32px */
+      --space-xxl: 4rem;     /* 64px */
+      --space-section: 4rem; /* 64px desktop */
+
+      /* Rounding */
+      --radius-sm: 4px;
+      --radius-card: 6px;
+
+      /* Container */
+      --container-width: 83.4%;
+      --container-max: 1280px;
+    }
+
+    /* ---- Reset ---- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-body);
+      font-size: var(--size-body);
+      line-height: var(--lh-body);
+      color: var(--color-text);
+      background-color: var(--color-background);
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+
+    a { color: inherit; text-decoration: none; }
+
+    ul, ol { list-style: none; }
+
+    /* ---- Container ---- */
+    .container {
+      width: var(--container-width);
+      max-width: var(--container-max);
+      margin-inline: auto;
+    }
+
+    /* ---- Typography ---- */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family);
+      line-height: var(--lh-heading);
+    }
+
+    h1 {
+      font-size: var(--size-h1);
+      font-variation-settings: var(--fvs-display);
+    }
+
+    h2 {
+      font-size: var(--size-h2);
+      font-variation-settings: var(--fvs-heading);
+    }
+
+    h3 {
+      font-size: var(--size-h3);
+      font-variation-settings: var(--fvs-subheading);
+    }
+
+    h4 {
+      font-size: var(--size-h4);
+      font-variation-settings: var(--fvs-subheading);
+    }
+
+    p { max-width: 65ch; }
+
+    /* ---- Components ---- */
+
+    .ds-badge {
+      display: inline-block;
+      background: var(--color-verde);
+      color: var(--color-text-on-dark);
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-subheading);
+      font-size: var(--size-badge);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.4;
+    }
+
+    .ds-btn {
+      display: inline-block;
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-subheading);
+      font-size: var(--size-body);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background 200ms ease-out, color 200ms ease-out;
+    }
+
+    .ds-btn-primary {
+      background: var(--color-amarelo);
+      color: var(--color-azul);
+      padding: 12px 28px;
+    }
+
+    .ds-btn-primary:hover {
+      background: oklch(85% 0.185 95);
+    }
+
+    .ds-btn-secondary {
+      background: transparent;
+      color: var(--color-azul);
+      border: 2px solid var(--color-azul);
+      padding: 10px 26px;
+    }
+
+    .ds-btn-secondary:hover {
+      background: var(--color-azul);
+      color: var(--color-text-on-dark);
+    }
+
+    .ds-btn-dark {
+      background: var(--color-azul);
+      color: var(--color-text-on-dark);
+      padding: 12px 28px;
+    }
+
+    .ds-btn-dark:hover {
+      background: oklch(28% 0.095 265);
+    }
+
+    .ds-card {
+      background: var(--color-background);
+      border-left: 3px solid var(--color-verde);
+      border-radius: var(--radius-card);
+      padding: var(--space-l);
+      overflow: hidden;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      position: fixed;
+      top: 0;
+      inset-inline: 0;
+      z-index: 100;
+      background: transparent;
+      transition: background 300ms ease-out, box-shadow 300ms ease-out;
+      padding: 18px 8.3%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-l);
+    }
+
+    .site-header.scrolled {
+      background: var(--color-azul);
+      box-shadow: 0 2px 24px oklch(0% 0 0 / 0.3);
+    }
+
+    .site-header .header-promo {
+      display: none; /* hidden visually; a11y: not a heading */
+    }
+
+    .site-header .wordmark {
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-heading);
+      font-size: 1.125rem;
+      color: var(--color-text-on-dark);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xl);
+    }
+
+    .site-nav a {
+      color: var(--color-text-on-dark);
+      font-variation-settings: var(--fvs-semibold);
+      font-size: var(--size-small);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.85;
+      transition: opacity 200ms ease-out;
+    }
+
+    .site-nav a:hover { opacity: 1; }
+
+    .site-nav .nav-cta {
+      background: var(--color-amarelo);
+      color: var(--color-azul);
+      font-variation-settings: var(--fvs-subheading);
+      padding: 8px 18px;
+      border-radius: var(--radius-sm);
+      opacity: 1;
+      font-size: var(--size-badge);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .site-nav .nav-cta:hover {
+      background: oklch(85% 0.185 95);
+    }
+
+    /* ---- Sections — base ---- */
+    .page-section {
+      padding-block: var(--space-section);
+    }
+
+    .section-eyebrow {
+      margin-bottom: var(--space-m);
+    }
+
+    .section-header {
+      margin-bottom: var(--space-xl);
+    }
+
+    .section-header h2 {
+      margin-top: var(--space-s);
+    }
+
+    /* ---- S0: Hero ---- */
+    .hero-section {
+      min-height: 80vh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      z-index: 0;
+    }
+
+    .hero-scrim {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        to top,
+        var(--color-azul) 0%,
+        oklch(22% 0.095 265 / 0.75) 28%,
+        oklch(22% 0.095 265 / 0.1) 65%,
+        transparent 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: var(--space-xxl) 8.3%;
+      padding-bottom: 72px;
+    }
+
+    .hero-content h1 {
+      color: var(--color-text-on-dark);
+      max-width: 14ch;
+      margin-block: var(--space-m) var(--space-l);
+    }
+
+    .hero-content .hero-body {
+      color: oklch(95% 0 0);
+      font-size: 1.125rem;
+      font-variation-settings: "wght" 400;
+      max-width: 50ch;
+      margin-bottom: var(--space-xl);
+      letter-spacing: 0.01em;
+      line-height: 1.65;
+    }
+
+    /* ---- S1: Features Grid ---- */
+    .features-grid-section {
+      background: var(--color-background);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-l);
+      margin-top: var(--space-xl);
+    }
+
+    .feature-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .feature-card .card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      display: block;
+    }
+
+    .feature-card .card-body {
+      flex: 1;
+      padding: var(--space-l);
+      border-left: 3px solid var(--color-verde);
+      border-radius: 0 0 var(--radius-card) var(--radius-card);
+      background: var(--color-background);
+    }
+
+    .feature-card h3 {
+      font-size: var(--size-h5);
+      font-variation-settings: var(--fvs-subheading);
+      margin-bottom: var(--space-s);
+      color: var(--color-text);
+    }
+
+    .feature-card p {
+      font-size: var(--size-small);
+      color: oklch(35% 0 0);
+      line-height: 1.55;
+      max-width: none;
+    }
+
+    .features-grid-footer {
+      margin-top: var(--space-xl);
+      text-align: center;
+    }
+
+    /* ---- S2: Feature Tiles ---- */
+    .tiles-section {
+      background: var(--color-surface);
+    }
+
+    .tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-m);
+      margin-top: var(--space-xl);
+    }
+
+    .tile-card {
+      background: var(--color-background);
+      border-left: 3px solid var(--color-verde);
+      border-radius: var(--radius-card);
+      padding: var(--space-l);
+    }
+
+    .tile-card h4 {
+      font-size: var(--size-body);
+      font-variation-settings: var(--fvs-subheading);
+      color: var(--color-text);
+      margin-bottom: var(--space-xs);
+    }
+
+    .tile-card p {
+      font-size: var(--size-small);
+      color: oklch(38% 0 0);
+      max-width: none;
+    }
+
+    /* ---- S3: Bento Map ---- */
+    .bento-section {
+      background: var(--color-background);
+      overflow: hidden;
+    }
+
+    .bento-header {
+      margin-bottom: var(--space-xl);
+    }
+
+    .bento-header p {
+      margin-top: var(--space-m);
+      color: oklch(40% 0 0);
+      max-width: 56ch;
+    }
+
+    .bento-wrapper {
+      position: relative;
+    }
+
+    .bento-deco {
+      position: absolute;
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-display);
+      font-size: clamp(80px, 10vw, 140px);
+      color: var(--color-verde);
+      opacity: 0.07;
+      top: -20px;
+      right: -10px;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 160px);
+      gap: 10px;
+    }
+
+    .bento-city {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: var(--space-m);
+      background: var(--color-surface);
+    }
+
+    .bento-city .city-deco {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-display);
+      font-size: clamp(48px, 6vw, 88px);
+      color: var(--color-verde);
+      opacity: 0.09;
+      line-height: 1;
+      padding: 0 var(--space-m);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .bento-city .city-label {
+      position: relative;
+      z-index: 1;
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-heading);
+      font-size: var(--size-small);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-azul);
+    }
+
+    .bento-city--sao-paulo {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      background: oklch(94% 0.008 145);
+    }
+
+    .bento-city--sao-paulo .city-deco { font-size: clamp(60px, 8vw, 110px); }
+
+    .bento-city--rio {
+      grid-column: 3 / 5;
+      grid-row: 1 / 2;
+      background: oklch(95% 0.006 265);
+    }
+
+    .bento-city--belo {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+      background: oklch(94% 0.008 145);
+    }
+
+    .bento-city--manaus {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      background: oklch(95% 0.006 265);
+    }
+
+    .bento-city--salvador {
+      grid-column: 4 / 5;
+      grid-row: 3 / 4;
+      background: oklch(93% 0.01 95);
+    }
+
+    /* ---- S4: FAQ Dark ---- */
+    .faq-section {
+      background: var(--color-azul);
+      color: var(--color-text-on-dark);
+    }
+
+    .faq-section .section-eyebrow .ds-badge {
+      background: var(--color-verde);
+    }
+
+    .faq-section h2 {
+      color: var(--color-text-on-dark);
+      margin-top: var(--space-s);
+    }
+
+    .faq-subheading {
+      color: oklch(80% 0 0);
+      font-size: 1.0625rem;
+      margin-top: var(--space-m);
+      max-width: 56ch;
+      letter-spacing: 0.01em;
+      line-height: 1.65;
+    }
+
+    .faq-list {
+      margin-top: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .faq-row {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: var(--space-xl);
+      padding-block: var(--space-l);
+      border-top: 1px solid oklch(57% 0.165 145 / 0.25);
+    }
+
+    .faq-row:last-child {
+      border-bottom: 1px solid oklch(57% 0.165 145 / 0.25);
+    }
+
+    .faq-q {
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-subheading);
+      font-size: 1.0625rem;
+      color: var(--color-amarelo);
+      line-height: 1.35;
+      letter-spacing: 0.005em;
+    }
+
+    .faq-a {
+      font-variation-settings: var(--fvs-body);
+      font-size: var(--size-body);
+      color: oklch(87% 0 0);
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+      max-width: none;
+    }
+
+    /* ---- S5: Editorial ---- */
+    .editorial-section {
+      background: var(--color-background);
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xxl);
+      margin-top: var(--space-xl);
+    }
+
+    .editorial-col {
+      position: relative;
+    }
+
+    .editorial-col .col-deco {
+      position: absolute;
+      top: -16px;
+      left: -12px;
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-display);
+      font-size: 7rem;
+      color: var(--color-verde);
+      opacity: 0.1;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .editorial-col-right {
+      border-left: 3px solid var(--color-verde);
+      padding-left: var(--space-xl);
+    }
+
+    .editorial-col h3 {
+      position: relative;
+      z-index: 1;
+      color: var(--color-text);
+      margin-bottom: var(--space-l);
+    }
+
+    .editorial-col p {
+      color: oklch(35% 0 0);
+      line-height: 1.7;
+    }
+
+    /* ---- S6: Tabbed Dark ---- */
+    .tabs-section {
+      background: var(--color-azul);
+      color: var(--color-text-on-dark);
+    }
+
+    .tabs-section h2 {
+      color: var(--color-text-on-dark);
+      margin-top: var(--space-s);
+    }
+
+    .tabs-strip {
+      display: flex;
+      gap: 0;
+      margin-top: var(--space-xl);
+      border-bottom: 1px solid oklch(57% 0.165 145 / 0.3);
+    }
+
+    .tab-btn {
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-subheading);
+      font-size: var(--size-body);
+      color: oklch(72% 0 0);
+      padding: var(--space-m) var(--space-xl) var(--space-m) 0;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      margin-bottom: -1px;
+      transition: color 200ms ease-out, border-color 200ms ease-out;
+      letter-spacing: 0.02em;
+    }
+
+    .tab-btn:hover { color: var(--color-text-on-dark); }
+
+    .tab-btn.active {
+      color: var(--color-text-on-dark);
+      border-bottom-color: var(--color-amarelo);
+    }
+
+    .tab-panel {
+      display: none;
+      padding-top: var(--space-xl);
+    }
+
+    .tab-panel.active { display: block; }
+
+    .tab-panel p {
+      color: oklch(82% 0 0);
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      max-width: 60ch;
+    }
+
+    /* ---- S7: Text+Video ---- */
+    .text-video-section {
+      background: var(--color-background);
+    }
+
+    .text-video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xxl);
+      align-items: center;
+      margin-top: var(--space-xl);
+    }
+
+    .text-video-left h2 {
+      color: var(--color-text);
+      margin-bottom: var(--space-l);
+    }
+
+    .text-video-left p {
+      color: oklch(38% 0 0);
+      line-height: 1.7;
+    }
+
+    .video-placeholder {
+      aspect-ratio: 16 / 9;
+      background: var(--color-surface);
+      border: 2px solid var(--color-verde);
+      border-radius: var(--radius-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-play-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--color-azul);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-play-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--color-text-on-dark);
+      margin-left: 3px;
+    }
+
+    /* ---- S8: Cards Demo ---- */
+    .cards-demo-section {
+      background: var(--color-surface);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-l);
+      margin-top: var(--space-xl);
+    }
+
+    .demo-card h4 {
+      margin-bottom: var(--space-s);
+      color: var(--color-text);
+    }
+
+    .demo-card p {
+      font-size: var(--size-small);
+      color: oklch(38% 0 0);
+      line-height: 1.6;
+      max-width: none;
+    }
+
+    /* ---- S9: Agent Section ---- */
+    .agent-section {
+      background: var(--color-background);
+    }
+
+    .agent-section h2 {
+      max-width: 16ch;
+      margin-top: var(--space-s);
+    }
+
+    .agent-feature-box {
+      margin-top: var(--space-xl);
+      border: 2px solid var(--color-azul);
+      border-radius: var(--radius-card);
+      padding: var(--space-xl);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-xl);
+      align-items: start;
+      max-width: 720px;
+    }
+
+    .agent-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--color-azul);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .agent-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--color-text-on-dark);
+    }
+
+    .agent-text h4 {
+      color: var(--color-text);
+      margin-bottom: var(--space-s);
+    }
+
+    .agent-text p {
+      font-size: var(--size-small);
+      color: oklch(38% 0 0);
+      line-height: 1.6;
+      max-width: none;
+    }
+
+    /* ---- S10: CTA Band ---- */
+    .cta-band-section {
+      background: var(--color-amarelo);
+      text-align: center;
+    }
+
+    .cta-band-section .cta-eyebrow {
+      font-family: var(--font-family);
+      font-variation-settings: var(--fvs-semibold);
+      font-size: var(--size-badge);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-azul);
+      margin-bottom: var(--space-m);
+    }
+
+    .cta-band-section h2 {
+      font-size: var(--size-h2);
+      font-variation-settings: var(--fvs-display);
+      color: var(--color-azul);
+      line-height: 1.05;
+      margin-bottom: var(--space-xl);
+      max-width: none;
+    }
+
+    /* ---- Footer ---- */
+    .site-footer {
+      background: var(--color-azul);
+      padding-block: var(--space-l);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-l);
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: var(--space-l);
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: oklch(72% 0 0);
+      font-size: var(--size-small);
+      font-variation-settings: var(--fvs-body);
+      transition: color 200ms ease-out;
+    }
+
+    .footer-links a:hover { color: var(--color-text-on-dark); }
+
+    .footer-copyright {
+      color: oklch(60% 0 0);
+      font-size: var(--size-small);
+      font-variation-settings: var(--fvs-body);
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 900px) {
+      :root { --space-section: 3rem; }
+
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .editorial-grid,
+      .text-video-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+      }
+
+      .editorial-col-right { padding-left: var(--space-l); }
+
+      .faq-row { grid-template-columns: 1fr; gap: var(--space-m); }
+
+      .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+      }
+
+      .bento-city--sao-paulo { grid-column: 1 / 3; grid-row: auto; }
+      .bento-city--rio { grid-column: 1 / 3; grid-row: auto; }
+      .bento-city--belo { grid-column: 1 / 2; grid-row: auto; }
+      .bento-city--manaus { grid-column: 2 / 3; grid-row: auto; }
+      .bento-city--salvador { grid-column: 1 / 3; grid-row: auto; }
+
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      :root { --space-section: 2rem; }
+
+      .site-header { padding-inline: 5%; }
+      .site-nav a:not(.nav-cta) { display: none; }
+
+      .hero-content { padding-inline: 5%; }
+
+      .container { width: 92%; }
+
+      .features-grid,
+      .tiles-grid { grid-template-columns: 1fr; }
+
+      .site-footer .footer-inner { flex-direction: column; align-items: flex-start; }
+
+      .tabs-strip { gap: 0; flex-wrap: wrap; }
+      .tab-btn { padding-right: var(--space-l); font-size: var(--size-small); }
+
+      .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 100px);
+      }
+
+      .bento-city--sao-paulo { grid-column: 1 / 3; grid-row: 1 / 3; }
+      .bento-city--rio       { grid-column: 1 / 3; grid-row: 3 / 4; }
+      .bento-city--belo      { grid-column: 1 / 2; grid-row: 4 / 5; }
+      .bento-city--manaus    { grid-column: 2 / 3; grid-row: 4 / 5; }
+      .bento-city--salvador  { display: none; }
+
+      .agent-feature-box { grid-template-columns: 1fr; }
+      .agent-icon { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header
+    class="site-header"
+    data-section-type="header"
+    data-source="_brand-extraction.json#systemComponents[kind=header]"
+    data-ia-fidelity="verbatim"
+  >
+    <p class="header-promo" aria-hidden="true">Default header promo</p>
+    <a href="#" class="wordmark">Author Kit</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#">Features</a>
+      <a href="#">Docs</a>
+      <a href="#" class="nav-cta">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- S0: HERO -->
+    <section
+      class="hero-section"
+      data-section-type="hero"
+      data-source="pages/home.json#sections[0]"
+      data-ia-fidelity="verbatim"
+    >
+      <img
+        class="hero-img"
+        src="https://main--aemnew--leoadobe.aem.page/media_1674c029fe1c222fe6f72c3bf0ad7fdf41e16eca9.jpg"
+        alt="Brazilian footballer in full sprint, stadium lights blazing"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="ds-badge section-eyebrow">Seleção 2026</span>
+        <h1>Brazil Goes for the Championship</h1>
+        <p class="hero-body">The Seleção is back. Six stars on the shirt, one dream in the heart.</p>
+        <a
+          href="https://github.com/aemsites/author-kit"
+          class="ds-btn ds-btn-primary"
+        >Join the Journey</a>
+      </div>
+    </section>
+
+    <!-- S1: FEATURES GRID -->
+    <section
+      class="page-section features-grid-section"
+      data-section-type="features-grid"
+      data-source="pages/home.json#sections[1]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <span class="ds-badge section-eyebrow">Por que o Brasil vai vencer</span>
+          <h2>Why Brazil Will Win</h2>
+        </div>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_1300083772e9645ea9463e3ff16e3a87fec824b7c.jpg"
+              alt="Speed and momentum on the pitch"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Unmatched Speed</h3>
+              <p>Brazilian forwards are the fastest in the world. On the counter-attack, no defence can keep up with the Seleção.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_1a22b50c2d1a3e61cb6b1f4a1ce284a7475caa8bb.jpg"
+              alt="Depth of squad"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Depth of Squad</h3>
+              <p>Brazil produces world-class talent at scale. From the favelas to the Maracanã, the pipeline never stops.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_1896e26305d79be855074187be5fb49665a5190d1.jpg"
+              alt="Tactical clarity"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Tactical Clarity</h3>
+              <p>No more uncertainty. The Seleção enters every match with a clear game plan, sharp pressing, and 100% fidelity to the coach's vision.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_1603e8a5fbbf063145148ad76dc2eecade1abb5d7.jpg"
+              alt="Team unity"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>A Nation United</h3>
+              <p>200 million fans behind one yellow shirt. When Brazil plays, the whole country plays together — that energy is unstoppable.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_164c78460645750ef2645ce84d681b8ea84957a97.jpg"
+              alt="Jogo Bonito"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Jogo Bonito</h3>
+              <p>The beautiful game was born in Brazil. Every dribble, every flick, every nutmeg is a reminder of who invented this art form.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_100771fec5bb7bb98fd37a35d6191f9e161044350.jpg"
+              alt="Legacy of five World Cup titles"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Five-Time Champions</h3>
+              <p>Brazil is the only nation to have won five World Cups. The sixth is not a dream — it's a destiny waiting to be claimed.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_13c0f03af2cd9ddfe9f889bc0af4cad0c6e0abeb4.jpg"
+              alt="Peak performance"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Peak Performance</h3>
+              <p>Brazil's training regime and technical staff are world-class. Every match-day lineup is fine-tuned for maximum impact.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="https://main--aemnew--leoadobe.aem.page/media_164d8086eb0a3cd21aed5a218e62ab1a7f213905d.jpg"
+              alt="Modular and adaptable play style"
+              loading="lazy"
+              class="card-image"
+            >
+            <div class="card-body">
+              <h3>Adaptable by Nature</h3>
+              <p>Brazil's squad can switch formations, styles, and rhythms mid-game. Flexible, resilient, and always dangerous.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="features-grid-footer">
+          <a href="https://www.aem.live/" class="ds-btn ds-btn-secondary">Follow the Seleção</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: FEATURE TILES -->
+    <section
+      class="page-section tiles-section"
+      data-section-type="feature-tiles"
+      data-source="pages/home.json#sections[2]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <span class="ds-badge section-eyebrow">O Manual Brasileiro</span>
+          <h2>The Brazilian Playbook</h2>
+          <p style="margin-top:var(--space-m);color:oklch(38% 0 0);max-width:56ch;">Everything that makes Brazil the greatest footballing nation. Nothing left out.</p>
+        </div>
+        <div class="tiles-grid">
+          <div class="tile-card">
+            <h4>Set Pieces</h4>
+            <p>Deadly from every dead ball situation.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Global Reach</h4>
+            <p>Brazilian players light up every league on earth.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Samba Flair</h4>
+            <p>Play with rhythm, creativity, and pure joy.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Attack System</h4>
+            <p>Multi-layered attacking threats from all positions.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Night Mode</h4>
+            <p>Brazil thrives under the floodlights. Every big game is a Brazil game.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Match Schedule</h4>
+            <p>Every kick-off counts. Brazil plans for every round.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Kit Design</h4>
+            <p>The yellow and green is the most iconic jersey in football history.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Fan Power</h4>
+            <p>Empower the most passionate supporters on the planet.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Live Stats</h4>
+            <p>Track every goal, assist, and save in real time.</p>
+          </div>
+          <div class="tile-card">
+            <h4>Youth Academy</h4>
+            <p>Brazil's next generation is already in training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3: BENTO MAP -->
+    <section
+      class="page-section bento-section"
+      data-section-type="bento-map"
+      data-source="pages/home.json#sections[3]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="bento-header">
+          <h2>The Road to Glory</h2>
+          <p>From the group stage to the final whistle — Brazil's journey runs through the heart of this great nation.</p>
+          <p style="margin-top:var(--space-s);">The Seleção is proudly made across all of Brazil.</p>
+        </div>
+        <div class="bento-wrapper">
+          <span class="bento-deco" aria-hidden="true">2026</span>
+          <div class="bento-grid">
+
+            <div class="bento-city bento-city--sao-paulo">
+              <span class="city-deco" aria-hidden="true">São Paulo</span>
+              <span class="city-label">São Paulo</span>
+            </div>
+
+            <div class="bento-city bento-city--rio">
+              <span class="city-deco" aria-hidden="true">Rio</span>
+              <span class="city-label">Rio de Janeiro</span>
+            </div>
+
+            <div class="bento-city bento-city--belo">
+              <span class="city-deco" aria-hidden="true">BH</span>
+              <span class="city-label">Belo Horizonte</span>
+            </div>
+
+            <div class="bento-city bento-city--manaus">
+              <span class="city-deco" aria-hidden="true">MAN</span>
+              <span class="city-label">Manaus</span>
+            </div>
+
+            <div class="bento-city bento-city--salvador">
+              <span class="city-deco" aria-hidden="true">SAL</span>
+              <span class="city-label">Salvador</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S4: FAQ DARK -->
+    <section
+      class="page-section faq-section"
+      data-section-type="faq-dark"
+      data-source="pages/home.json#sections[4]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <span class="ds-badge section-eyebrow">Tática</span>
+          <h2>Tactics, Passion, and Pure Football</h2>
+          <p class="faq-subheading">The philosophy that turns eleven players into an unstoppable force.</p>
+        </div>
+        <div class="faq-list">
+
+          <div class="faq-row">
+            <p class="faq-q">Why play defensively?</p>
+            <p class="faq-a">Brazil's best football has always been attacking. Sitting back is not in the DNA of the Seleção.</p>
+          </div>
+
+          <div class="faq-row">
+            <p class="faq-q">Is pressing the answer?</p>
+            <p class="faq-a">High press or patient build-up — Brazil's midfield can do both, adapting to any opponent's weak points.</p>
+          </div>
+
+          <div class="faq-row">
+            <p class="faq-q">Can the wingers decide it?</p>
+            <p class="faq-a">Brazil's wide players are match-winners. Speed, skill, and end product — every cross could be a trophy-winning assist.</p>
+          </div>
+
+          <div class="faq-row">
+            <p class="faq-q">Why trust the young stars?</p>
+            <p class="faq-a">Brazil's new generation carries the legacy with pride. Youth is not a weakness — it is the future of the Seleção.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: EDITORIAL -->
+    <section
+      class="page-section editorial-section"
+      data-section-type="editorial-text"
+      data-source="pages/home.json#sections[5]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="editorial-grid">
+
+          <div class="editorial-col editorial-col-left">
+            <span class="col-deco" aria-hidden="true">10</span>
+            <h3>The Art of the Dribble</h3>
+            <p>From Garrincha to Ronaldinho, Brazil has always produced players who make defenders look foolish. The dribble is not just a skill — it is an expression of freedom. Today's squad carries that tradition forward, entertaining the world one step-over at a time and reminding everyone why football is called the beautiful game.</p>
+          </div>
+
+          <div class="editorial-col editorial-col-right">
+            <h3>The Spirit of the Maracanã</h3>
+            <p>Bring your own passion.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- S6: TABBED DARK -->
+    <section
+      class="page-section tabs-section"
+      data-section-type="tabbed-dark"
+      data-source="pages/home.json#sections[6]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <span class="ds-badge section-eyebrow">Para Todos</span>
+          <h2>Something for everyone</h2>
+        </div>
+        <div class="tabs-strip" role="tablist" aria-label="Audience tabs">
+          <button
+            class="tab-btn active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="tab-authors"
+            id="btn-authors"
+          >Authors</button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-developers"
+            id="btn-developers"
+          >Developers</button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-agents"
+            id="btn-agents"
+          >Agents</button>
+        </div>
+        <div id="tab-authors" class="tab-panel active" role="tabpanel" aria-labelledby="btn-authors">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div id="tab-developers" class="tab-panel" role="tabpanel" aria-labelledby="btn-developers">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <div id="tab-agents" class="tab-panel" role="tabpanel" aria-labelledby="btn-agents">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- S7: TEXT + VIDEO -->
+    <section
+      class="page-section text-video-section"
+      data-section-type="text-video"
+      data-source="pages/home.json#sections[7]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="text-video-grid">
+          <div class="text-video-left">
+            <h2>Maybe you want to have a bit of text next to a video.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="video-placeholder" aria-label="Video placeholder">
+              <div class="video-play-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S8: CARDS DEMO -->
+    <section
+      class="page-section cards-demo-section"
+      data-section-type="cards-demo"
+      data-source="pages/home.json#sections[8]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 style="font-size:var(--size-h4);font-variation-settings:var(--fvs-heading);">Cards</h2>
+          <p style="margin-top:var(--space-s);color:oklch(38% 0 0);">What if you could have cards inside a tab?</p>
+        </div>
+        <div class="cards-grid">
+          <div class="ds-card demo-card">
+            <h4>Card Title One</h4>
+            <p>A demonstration of the ds-card component with verde left-border and balanced padding.</p>
+          </div>
+          <div class="ds-card demo-card">
+            <h4>Card Title Two</h4>
+            <p>Each card inherits the design system's token stack — background, border, radius, and spacing.</p>
+          </div>
+          <div class="ds-card demo-card">
+            <h4>Card Title Three</h4>
+            <p>Cards compose well in grids, and the verde accent ties each one back to the Brazilian palette.</p>
+          </div>
+          <div class="ds-card demo-card">
+            <h4>Card Title Four</h4>
+            <p>This section demonstrates the Author Kit block system at World Cup scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S9: AGENT SECTION -->
+    <section
+      class="page-section agent-section"
+      data-section-type="agent-section"
+      data-source="pages/home.json#sections[9]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>You don't just have to be a human.</h2>
+          <p style="margin-top:var(--space-m);color:oklch(38% 0 0);max-width:52ch;font-size:1.0625rem;">Even AI agents can feel at home with Author Kit.</p>
+        </div>
+        <div class="agent-feature-box">
+          <div class="agent-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 9V7c0-1.1-.9-2-2-2h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v2c-1.66 0-3 1.34-3 3s1.34 3 3 3v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4c1.66 0 3-1.34 3-3s-1.34-3-3-3zm-2 10H6V7h12v12zm-9-6c-.83 0-1.5-.67-1.5-1.5S8.17 10 9 10s1.5.67 1.5 1.5S9.83 13 9 13zm6 0c-.83 0-1.5-.67-1.5-1.5S14.17 10 15 10s1.5.67 1.5 1.5S15.83 13 15 13zm-3 3.5c-1.5 0-2.81-.83-3.5-2h7c-.69 1.17-2 2-3.5 2z"/>
+            </svg>
+          </div>
+          <div class="agent-text">
+            <h4>Author Kit for Agents</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S10: CTA BAND -->
+    <section
+      class="page-section cta-band-section"
+      data-section-type="cta-band"
+      data-source="pages/home.json#sections[10]"
+      data-ia-fidelity="verbatim"
+    >
+      <div class="container">
+        <p class="cta-eyebrow">Vamos</p>
+        <h2>O Jogo Bonito começa aqui.</h2>
+        <a href="https://www.aem.live/developer/tutorial" class="ds-btn ds-btn-dark">Get started with AEM</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer
+    class="site-footer"
+    data-section-type="footer"
+    data-source="_brand-extraction.json#systemComponents[kind=footer]"
+    data-ia-fidelity="verbatim"
+  >
+    <div class="container footer-inner">
+      <nav class="footer-links" aria-label="Footer legal links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Do not sell or share my personal information</a>
+      </nav>
+      <p class="footer-copyright">© 2025 Adobe. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll: transparent → azul
+    (function () {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      const update = () => {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      };
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }());
+
+    // Tab panel interactivity (section 6)
+    (function () {
+      const strip = document.querySelector('.tabs-strip');
+      if (!strip) return;
+      strip.addEventListener('click', (e) => {
+        const btn = e.target.closest('.tab-btn');
+        if (!btn) return;
+        const panelId = btn.getAttribute('aria-controls');
+        const panel = document.getElementById(panelId);
+        if (!panel) return;
+
+        strip.querySelectorAll('.tab-btn').forEach((b) => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.tab-panel').forEach((p) => {
+          p.classList.remove('active');
+        });
+
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        panel.classList.add('active');
+      });
+    }());
+  </script>
+
+</body>
+</html>

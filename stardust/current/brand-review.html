@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Review — main--aemnew--leoadobe.aem.page</title>
+<style>
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #f9f9f9;
+    --color-text: #1b1b1b;
+    --color-brand: #9d60d8;
+    --color-accent: #bd0084;
+    --color-border: rgba(0,0,0,0.1);
+    --font: montserrat, "Trebuchet MS", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font); background: var(--color-bg); color: var(--color-text); font-size: 16px; line-height: 1.6; }
+  .page { max-width: 1200px; margin: 0 auto; padding: 48px 32px; }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 48px 0 16px; border-bottom: 2px solid var(--color-brand); padding-bottom: 8px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
+  .meta { color: #636363; font-size: 14px; margin-bottom: 32px; }
+  .coverage { background: var(--color-surface); border-radius: 6px; padding: 16px 24px; margin-bottom: 32px; font-size: 14px; }
+  .coverage strong { color: var(--color-brand); }
+
+  /* Tensions */
+  .tensions { display: flex; flex-direction: column; gap: 12px; }
+  .tension { border-left: 4px solid; border-radius: 4px; padding: 12px 16px; font-size: 14px; }
+  .tension.warn { border-color: #f37500; background: #fff8f0; }
+  .tension.info { border-color: var(--color-brand); background: #f4edfb; }
+  .tension.pass { border-color: #24b032; background: #f0faf1; }
+  .tension-id { font-weight: 700; margin-bottom: 4px; }
+  .tension-desc { color: #494949; }
+
+  /* Palette */
+  .palette { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  .swatch { width: 80px; text-align: center; }
+  .swatch-color { width: 80px; height: 56px; border-radius: 6px; border: 1px solid var(--color-border); margin-bottom: 4px; }
+  .swatch-label { font-size: 11px; color: #636363; word-break: break-all; }
+
+  /* Type specimens */
+  .type-specimen { background: var(--color-surface); border-radius: 6px; padding: 24px; margin-bottom: 16px; }
+  .specimen-h1 { font-size: 32.44px; font-weight: 600; line-height: 1.15; color: var(--color-text); }
+  .specimen-h2 { font-size: 28.83px; font-weight: 600; line-height: 1.15; color: var(--color-text); }
+  .specimen-h3 { font-size: 22.78px; font-weight: 600; line-height: 1.15; color: var(--color-text); }
+  .specimen-body { font-size: 16px; font-weight: 400; line-height: 1.6; color: var(--color-text); }
+  .specimen-label { font-size: 11px; color: #636363; margin-top: 8px; }
+
+  /* Component specimens */
+  .component-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; padding: 24px; background: var(--color-surface); border-radius: 6px; margin-bottom: 16px; }
+  .btn { display: inline-block; padding: 10px 24px; border-radius: 4px; font-family: var(--font); font-weight: 600; font-size: 14px; text-decoration: none; cursor: pointer; border: none; }
+  .btn-accent { background: var(--color-accent); color: #fff; }
+  .btn-secondary { background: transparent; color: var(--color-text); border: 1px solid var(--color-text); }
+
+  /* IA outline */
+  .ia-section { background: var(--color-surface); border-radius: 4px; padding: 10px 14px; margin-bottom: 8px; font-size: 14px; }
+  .ia-section .purpose { font-size: 11px; color: var(--color-brand); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+
+  /* Images */
+  .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .image-thumb { border-radius: 6px; overflow: hidden; border: 1px solid var(--color-border); }
+  .image-thumb img { width: 100%; height: 120px; object-fit: cover; display: block; }
+  .image-thumb .image-meta { font-size: 11px; color: #636363; padding: 6px 8px; }
+
+  .source-note { font-size: 11px; color: #999; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; padding: 8px 12px; background: var(--color-surface); font-weight: 600; }
+  td { padding: 8px 12px; border-top: 1px solid var(--color-border); }
+  code { font-family: monospace; background: #f1f1f1; padding: 2px 5px; border-radius: 3px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Brand Review</h1>
+  <p class="meta">
+    <strong>Site:</strong> <a href="https://main--aemnew--leoadobe.aem.page/">main--aemnew--leoadobe.aem.page</a> &nbsp;·&nbsp;
+    <strong>Extracted:</strong> 2026-05-18 &nbsp;·&nbsp;
+    <strong>Pages:</strong> 1 (home) &nbsp;·&nbsp;
+    <strong>Tool:</strong> stardust:extract v0.7.1
+  </p>
+
+  <div class="coverage">
+    <strong>Coverage:</strong> 1 of 1 discovered pages extracted (sitemap.xml had 1 URL). Single-page site.
+    All brand aggregation is from the home page only. Brand signal: <strong>signal-strong</strong>
+    (named type family + 5+ distinct palette colors).
+  </div>
+
+  <!-- TENSIONS -->
+  <h2>Tensions</h2>
+  <div class="tensions">
+
+    <div class="tension warn">
+      <div class="tension-id">T-lcp-no-eager</div>
+      <div class="tension-desc">
+        The first <code>&lt;img&gt;</code> in the DOM has <code>about:error</code> as its src
+        (a broken image reference), which means the actual first visible image
+        (<code>media_1300083772e9…</code>, alt="Speed and momentum on the pitch") is lazy-loaded.
+        This likely delays LCP on the live page.
+        <em>Fix: ensure the hero image has <code>loading="eager"</code> and <code>fetchpriority="high"</code>.</em>
+      </div>
+    </div>
+
+    <div class="tension warn">
+      <div class="tension-id">T-h1-level-regression</div>
+      <div class="tension-desc">
+        The first heading in the DOM is an H2 ("Default header promo") inside the header/nav,
+        before the H1 ("Brazil Goes for the Championship") in <code>&lt;main&gt;</code>.
+        Screen readers and crawlers will encounter an H2 before any H1 — a heading hierarchy
+        violation. <em>Fix: remove or demote the header H2, or change it to a <code>&lt;p&gt;</code>
+        or <code>aria-label</code>.</em>
+      </div>
+    </div>
+
+    <div class="tension info">
+      <div class="tension-id">T-demo-content-overlay</div>
+      <div class="tension-desc">
+        The live <code>main</code> branch is serving Brazil World Cup editorial content ("Brazil Goes
+        for the Championship") while the product being showcased is Author Kit. The CTAs link to
+        GitHub (author-kit repo) and aem.live, confirming this is intentional demo content — but the
+        product identity ("Author Kit") surfaces only in the header logo and the last few sections.
+        The first 60% of the page reads as a football editorial, not a developer tool landing page.
+        <em>Note for direction: the redesign should clarify which content is demo/illustrative and
+        which is canonical product messaging.</em>
+      </div>
+    </div>
+
+    <div class="tension info">
+      <div class="tension-id">T-single-font-family</div>
+      <div class="tension-desc">
+        The entire site uses a single typeface (Montserrat) for both headings and body. While
+        Montserrat is variable (wght 100–900), the lack of a complementary type pairing means all
+        typographic hierarchy is achieved through weight and size alone. This is a deliberate
+        simplicity choice but limits expressive range.
+      </div>
+    </div>
+
+    <div class="tension pass">
+      <div class="tension-id">T-dark-mode-supported ✓</div>
+      <div class="tension-desc">
+        Dark mode is fully implemented via CSS <code>light-dark()</code> and <code>.dark-scheme</code>
+        section classes. Both light and dark surfaces are consistently handled.
+      </div>
+    </div>
+
+    <div class="tension pass">
+      <div class="tension-id">T-type-scale-modular ✓</div>
+      <div class="tension-desc">
+        Heading scale is modular (~1.122 ratio): 32.44 → 28.83 → 25.63 → 22.78 → 20.25 → 18px.
+        Consistent and well-structured.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PALETTE -->
+  <h2>Palette</h2>
+  <p class="source-note">Source: <code>stardust/current/_brand-extraction.json § palette</code> · computed from <code>pages/home.json</code></p>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#ffffff; border: 1px solid #ddd;"></div>
+      <div class="swatch-label">background<br>#ffffff</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#f9f9f9;"></div>
+      <div class="swatch-label">surface<br>#f9f9f9</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#1b1b1b;"></div>
+      <div class="swatch-label">text<br>#1b1b1b</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#9d60d8;"></div>
+      <div class="swatch-label">brand<br>#9d60d8</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#bd0084;"></div>
+      <div class="swatch-label">accent<br>#bd0084</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#000000;"></div>
+      <div class="swatch-label">dark<br>#000000</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#ffffff; border: 1px solid #ddd;"></div>
+      <div class="swatch-label">text-on-dark<br>#ffffff</div>
+    </div>
+  </div>
+  <p style="font-size:13px; color:#636363; margin-top:8px;">Full color system: 9 scales × 9 steps (gray, green, teal, blue, purple, magenta, red, orange, yellow). Light/dark mode via <code>light-dark()</code>.</p>
+
+  <!-- TYPOGRAPHY -->
+  <h2>Typography</h2>
+  <p class="source-note">Source: <code>stardust/current/_brand-extraction.json § type</code></p>
+  <div class="type-specimen">
+    <div class="specimen-h1">Brazil Goes for the Championship</div>
+    <div class="specimen-label">H1 · Montserrat 600 · 32.44px / lh 1.15 · --heading-font-size-xxl</div>
+  </div>
+  <div class="type-specimen">
+    <div class="specimen-h2">Why Brazil Will Win</div>
+    <div class="specimen-label">H2 · Montserrat 600 · 28.83px / lh 1.15 · --heading-font-size-xl</div>
+  </div>
+  <div class="type-specimen">
+    <div class="specimen-h3">The Art of the Dribble</div>
+    <div class="specimen-label">H4 · Montserrat 600 · 22.78px / lh 1.15 · --heading-font-size-m</div>
+  </div>
+  <div class="type-specimen">
+    <div class="specimen-body">Brazilian forwards are the fastest in the world — on the counter-attack, no defence can keep up with the Seleção. The pipeline of talent never stops.</div>
+    <div class="specimen-label">Body · Montserrat 400 · 16px / lh 1.6 · --body-font-size-m</div>
+  </div>
+
+  <!-- COMPONENTS -->
+  <h2>Components</h2>
+  <p class="source-note">Source: <code>stardust/current/DESIGN.json § components</code></p>
+  <div class="component-row">
+    <a href="#" class="btn btn-accent">Join the Journey</a>
+    <a href="#" class="btn btn-secondary">Follow the Seleção</a>
+  </div>
+
+  <!-- IA / SECTIONS -->
+  <h2>Page Structure</h2>
+  <p class="source-note">Source: <code>stardust/current/pages/home.json § sections</code> · 11 sections</p>
+
+  <div class="ia-section"><div class="purpose">hero</div><strong>Brazil Goes for the Championship</strong> — "The Seleção is back. Six stars on the shirt, one dream in the heart." · CTA: Join the Journey</div>
+  <div class="ia-section"><div class="purpose">features-grid (3-col)</div><strong>Why Brazil Will Win</strong> — 8 feature cards with photography. CTA: Follow the Seleção</div>
+  <div class="ia-section"><div class="purpose">feature-tiles (2-col)</div><strong>The Brazilian Playbook</strong> — 10 icon+text tiles. No CTA.</div>
+  <div class="ia-section"><div class="purpose">bento-layout</div><strong>The Road to Glory</strong> — City callouts: São Paulo, Rio, Belo Horizonte, Manaus, Salvador.</div>
+  <div class="ia-section"><div class="purpose">faq-grid / dark-scheme</div><strong>Tactics, Passion, and Pure Football</strong> — 4 Q&A accordion cards on dark background.</div>
+  <div class="ia-section"><div class="purpose">editorial-text</div><strong>The Art of the Dribble + The Spirit of the Maracanã</strong> — Long-form editorial paragraphs.</div>
+  <div class="ia-section"><div class="purpose">tabbed / dark-scheme</div><strong>Something for everyone</strong> — Authors / Developers / Agents tabs. Dark background with section background image.</div>
+  <div class="ia-section"><div class="purpose">text-video</div><strong>Maybe you want to have a bit of text next to a video.</strong> — Demo layout block.</div>
+  <div class="ia-section"><div class="purpose">cards-demo</div><strong>Cards in a tab demo</strong> — Component showcase.</div>
+  <div class="ia-section"><div class="purpose">agent-section</div><strong>You don't just have to be a human.</strong> — Agent-audience callout. Lorem ipsum body.</div>
+  <div class="ia-section"><div class="purpose">cta-band</div>CTA: <strong>Get started with AEM</strong> → aem.live/developer/tutorial</div>
+
+  <!-- IMAGES -->
+  <h2>Imagery</h2>
+  <p class="source-note">Source: <code>stardust/current/pages/home.json § images</code> · 9 photography + 9 SVG icons</p>
+  <div class="image-grid">
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_1300083772e9645ea9463e3ff16e3a87fec824b7c.jpg?width=400&format=jpg&optimize=medium" alt="Speed and momentum on the pitch" loading="lazy">
+      <div class="image-meta">Speed and momentum on the pitch · 1600×909</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_1a22b50c2d1a3e61cb6b1f4a1ce284a7475caa8bb.jpg?width=400&format=jpg&optimize=medium" alt="Depth of squad" loading="lazy">
+      <div class="image-meta">Depth of squad · 1600×1101</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_1896e26305d79be855074187be5fb49665a5190d1.jpg?width=400&format=jpg&optimize=medium" alt="Tactical clarity" loading="lazy">
+      <div class="image-meta">Tactical clarity · 1600×889</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_1603e8a5fbbf063145148ad76dc2eecade1abb5d7.jpg?width=400&format=jpg&optimize=medium" alt="Team unity" loading="lazy">
+      <div class="image-meta">Team unity · 1600×1045</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_164c78460645750ef2645ce84d681b8ea84957a97.jpg?width=400&format=jpg&optimize=medium" alt="Jogo Bonito" loading="lazy">
+      <div class="image-meta">Jogo Bonito · 1600×1059</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_100771fec5bb7bb98fd37a35d6191f9e161044350.jpg?width=400&format=jpg&optimize=medium" alt="Legacy of five World Cup titles" loading="lazy">
+      <div class="image-meta">Legacy · 1600×1066</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_13c0f03af2cd9ddfe9f889bc0af4cad0c6e0abeb4.jpg?width=400&format=jpg&optimize=medium" alt="Peak performance" loading="lazy">
+      <div class="image-meta">Peak performance · 1600×1120</div>
+    </div>
+    <div class="image-thumb">
+      <img src="https://main--aemnew--leoadobe.aem.page/media_164d8086eb0a3cd21aed5a218e62ab1a7f213905d.jpg?width=400&format=jpg&optimize=medium" alt="Adaptable play style" loading="lazy">
+      <div class="image-meta">Adaptable · 3000×2001</div>
+    </div>
+  </div>
+
+  <!-- TOKEN TABLE -->
+  <h2>Design Tokens (selected)</h2>
+  <p class="source-note">Source: <code>pages/home.json</code> CSS custom properties</p>
+  <table>
+    <thead><tr><th>Token</th><th>Value</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td><code>--color-brand</code></td><td>#9d60d8</td><td>Brand / purple-500</td></tr>
+      <tr><td><code>--color-accent</code></td><td>#bd0084 / #eb00a5</td><td>CTA / magenta-600 light / 500 dark</td></tr>
+      <tr><td><code>--color-text</code></td><td>light-dark(black, white)</td><td>Body text</td></tr>
+      <tr><td><code>--font-family</code></td><td>montserrat, "Trebuchet MS", sans-serif</td><td>All text</td></tr>
+      <tr><td><code>--heading-font-size-xxl</code></td><td>32.44px</td><td>H1</td></tr>
+      <tr><td><code>--spacing-xxl</code></td><td>48px</td><td>Section padding</td></tr>
+      <tr><td><code>--grid-container-width</code></td><td>83.4%</td><td>Max content width</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top: 48px; font-size: 13px; color: #999;">
+    Generated by stardust:extract v0.7.1 · 2026-05-18 ·
+    <a href="stardust/current/pages/home.json" style="color: var(--color-brand);">home.json</a> ·
+    <a href="stardust/current/_brand-extraction.json" style="color: var(--color-brand);">_brand-extraction.json</a>
+  </p>
+</div>
+</body>
+</html>

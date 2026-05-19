@@ -1,0 +1,184 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-05-18T23:16:26.664Z",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/pages/home.json"
+    ],
+    "note": "Descriptive snapshot of the existing design system — not the redesign target."
+  },
+  "schemaVersion": 2,
+  "colors": {
+    "background": "#ffffff",
+    "surface": "#f9f9f9",
+    "text": "#1b1b1b",
+    "brand": "#9d60d8",
+    "accent": "#bd0084",
+    "dark": "#000000",
+    "textOnDark": "#ffffff"
+  },
+  "typography": {
+    "headingFamily": "Montserrat",
+    "bodyFamily": "Montserrat",
+    "baseSize": "16px",
+    "scaleRatio": 1.122,
+    "headingWeight": 600,
+    "bodyWeight": 400,
+    "lineHeightHeading": 1.15,
+    "lineHeightBody": 1.6,
+    "variable": true,
+    "variableAxes": ["wght (100-900)"]
+  },
+  "rounded": {
+    "primary": "4px",
+    "note": "Inferred; not explicitly in captured tokens"
+  },
+  "spacing": {
+    "base": "4px",
+    "xs": "4px",
+    "s": "8px",
+    "m": "12px",
+    "l": "24px",
+    "xl": "32px",
+    "xxl": "48px",
+    "sectionPadding": {
+      "desktop": "48px",
+      "tablet": "36px",
+      "mobile": "24px"
+    }
+  },
+  "components": [
+    {
+      "name": "button-primary",
+      "selector": ".btn.btn-accent",
+      "properties": {
+        "background": "#bd0084",
+        "color": "#ffffff",
+        "borderRadius": "4px",
+        "fontFamily": "Montserrat",
+        "fontWeight": 600
+      },
+      "html": "<a href=\"#\" class=\"btn btn-accent\">Join the Journey</a>"
+    },
+    {
+      "name": "button-secondary",
+      "selector": ".btn",
+      "properties": {
+        "background": "transparent",
+        "color": "#1b1b1b",
+        "border": "1px solid currentColor"
+      }
+    },
+    {
+      "name": "card",
+      "properties": {
+        "background": "#ffffff",
+        "borderRadius": "4px",
+        "padding": "24px"
+      }
+    },
+    {
+      "name": "link",
+      "properties": {
+        "color": "#1b1b1b",
+        "textDecoration": "underline on hover"
+      }
+    }
+  ],
+  "extensions": {
+    "colorMeta": {
+      "lightDark": true,
+      "mechanism": "CSS light-dark() + .dark-scheme class",
+      "scales": ["gray", "green", "teal", "blue", "purple", "magenta", "red", "orange", "yellow"],
+      "semanticTokens": ["--color-text", "--color-link", "--color-brand", "--color-accent", "--color-background", "--color-shaded"]
+    },
+    "typographyMeta": {
+      "fontFiles": [],
+      "licensing": "Google Fonts (OFL)",
+      "googleFonts": true,
+      "monoFamily": null
+    },
+    "breakpoints": {
+      "mobile": 600,
+      "tablet": 900,
+      "desktop": 1200,
+      "wide": 1440
+    },
+    "componentStyle": {
+      "buttons": {
+        "primary": { "bg": "#bd0084", "fg": "#ffffff", "radius": "4px", "weight": 600 },
+        "secondary": { "bg": "transparent", "fg": "#1b1b1b", "border": "1px solid" }
+      },
+      "cards": {
+        "bg": "#ffffff",
+        "radius": "4px",
+        "shadow": "none",
+        "padding": "24px"
+      },
+      "inputs": {},
+      "dualCTAPattern": false
+    },
+    "motifs": [
+      { "name": "full-bleed-photography", "description": "Large-format football photography used as hero and feature imagery" },
+      { "name": "dark-section-alternation", "description": "Dark-scheme sections alternate with light for visual rhythm" },
+      { "name": "bento-grid", "description": "Bento-style uneven grid used for geographic / location content" },
+      { "name": "svg-icon-grid", "description": "9 SVG icons in a feature-tile grid" }
+    ],
+    "voice": {
+      "register": "brand",
+      "tone": "energetic, aspirational, editorial",
+      "examples": {
+        "do": [
+          "Six stars on the shirt, one dream in the heart.",
+          "From the favelas to the Maracanã, the pipeline never stops.",
+          "Join the Journey"
+        ],
+        "dont": [
+          "Passive hedging",
+          "Corporate-generic phrasing"
+        ]
+      }
+    },
+    "systemComponentRoles": {
+      "header": {
+        "purpose": "Site navigation and brand identity",
+        "positionClass": "fixed top",
+        "content": "Brand name + nav links + theme toggle + language selector"
+      },
+      "footer": {
+        "purpose": "Legal links and copyright",
+        "positionClass": "page bottom",
+        "content": "Adobe legal links, copyright notice"
+      }
+    },
+    "iaPriorities": [],
+    "modules": [],
+    "divergence": {}
+  },
+  "narrative": {
+    "northStar": "A developer toolkit for AEM EDS — fast, flexible, author-friendly.",
+    "overview": "Single-page landing site for AEM Author Kit, using Brazil World Cup editorial as demo content. Bold photography, strong type hierarchy, and versatile block system.",
+    "keyCharacteristics": [
+      "Single variable font (Montserrat) with full weight range",
+      "Purple brand / magenta accent color system",
+      "Light/dark mode via CSS light-dark()",
+      "Rich section variety: hero, grids, bento, tabs, FAQ, editorial",
+      "AEM EDS block architecture"
+    ],
+    "rules": [
+      "Section padding uses --spacing-xxl (48px) consistently",
+      "Grid uses 83.4% container width with 12-column system",
+      "Dark sections use .dark-scheme class override"
+    ],
+    "dos": [
+      "Use Montserrat variable weights for hierarchy",
+      "Use --color-accent (magenta) for primary CTAs",
+      "Use dark-scheme sections to break visual rhythm"
+    ],
+    "donts": [
+      "Don't use flat color backgrounds without the grid system",
+      "Don't mix font families — single-family system"
+    ]
+  }
+}

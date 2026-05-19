@@ -1,0 +1,193 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-05-18T23:16:26.664Z",
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-05-18T23:16:26.664Z",
+    "waitMs": 2380,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "url": "https://main--aemnew--leoadobe.aem.page/",
+    "viewport": "1440x900"
+  },
+  "slug": "home",
+  "url": "https://main--aemnew--leoadobe.aem.page/",
+  "type": "landing",
+  "meta": {
+    "title": "Brazil Goes for the Championship",
+    "description": "The Seleção is back. Six stars on the shirt, one dream in the heart.",
+    "ogTitle": "Brazil Goes for the Championship",
+    "ogDescription": "The Seleção is back. Six stars on the shirt, one dream in the heart.",
+    "ogImage": "https://main--aemnew--leoadobe.aem.page/media_1674c029fe1c222fe6f72c3bf0ad7fdf41e16eca9.jpg?width=1200&format=pjpg&optimize=medium",
+    "themeColor": null,
+    "canonical": "https://main--aemnew--leoadobe.aem.page/",
+    "lang": "en"
+  },
+  "headings": [
+    { "level": 2, "text": "Default header promo" },
+    { "level": 1, "text": "Brazil Goes for the Championship" },
+    { "level": 2, "text": "Why Brazil Will Win" },
+    { "level": 2, "text": "The Brazilian Playbook" },
+    { "level": 2, "text": "The Road to Glory" },
+    { "level": 2, "text": "São Paulo" },
+    { "level": 2, "text": "Rio de Janeiro" },
+    { "level": 2, "text": "Belo Horizonte" },
+    { "level": 2, "text": "Manaus" },
+    { "level": 2, "text": "Salvador" },
+    { "level": 2, "text": "Tactics, Passion, and Pure Football" },
+    { "level": 3, "text": "The Art of the Dribble" },
+    { "level": 3, "text": "The Spirit of the Maracanã" },
+    { "level": 2, "text": "Something for everyone" },
+    { "level": 2, "text": "Maybe you want to have a bit of text next to a video." },
+    { "level": 2, "text": "You don't just have to be a human." },
+    { "level": 2, "text": "Even AI agents can feel at home with Author Kit." }
+  ],
+  "landmarks": {
+    "header": {
+      "innerText": "Author Kit\n\nFeatures\n\nDocs\n\nGet started\n\nToggle color scheme\nChange language"
+    },
+    "nav": {
+      "links": ["Features", "Docs", "Get started"]
+    },
+    "footer": {
+      "innerText": "Terms of Use\nPrivacy Policy\nCookies\nDo not sell or share my personal information\n\n© 2025 Adobe. All Rights Reserved."
+    }
+  },
+  "sections": [
+    {
+      "index": 0,
+      "className": "section",
+      "purpose": "hero",
+      "heading": "Brazil Goes for the Championship",
+      "body": ["The Seleção is back. Six stars on the shirt, one dream in the heart."],
+      "ctas": [{ "label": "Join the Journey", "href": "https://github.com/aemsites/author-kit" }]
+    },
+    {
+      "index": 1,
+      "className": "section center container grid grid-3 gap-xxl spacing-xxl",
+      "purpose": "features-grid",
+      "heading": "Why Brazil Will Win",
+      "subheading": "Follow the Seleção",
+      "ctas": [{ "label": "Follow the Seleção", "href": "https://www.aem.live/" }],
+      "body": [
+        "Unmatched Speed — Brazilian forwards are the fastest in the world — on the counter-attack, no defence can keep up with the Seleção.",
+        "Depth of Squad — Brazil produces world-class talent at scale. From the favelas to the Maracanã, the pipeline never stops.",
+        "Tactical Clarity — No more uncertainty. The Seleção enters every match with a clear game plan, sharp pressing, and 100% fidelity to the coach's vision.",
+        "A Nation United — 200 million fans behind one yellow shirt. When Brazil plays, the whole country plays together — that energy is unstoppable.",
+        "Jogo Bonito — The beautiful game was born in Brazil. Every dribble, every flick, every nutmeg is a reminder of who invented this art form.",
+        "Five-Time Champions — Brazil is the only nation to have won five World Cups. The sixth is not a dream — it's a destiny waiting to be claimed.",
+        "Peak Performance — Brazil's training regime and technical staff are world-class. Every match-day lineup is fine-tuned for maximum impact on the global stage.",
+        "Adaptable by Nature — Brazil's squad can switch formations, styles, and rhythms mid-game. Flexible, resilient, and always dangerous — no matter the opponent."
+      ]
+    },
+    {
+      "index": 2,
+      "className": "section center container grid grid-2 gap-m spacing-xxl container-6",
+      "purpose": "feature-tiles",
+      "heading": "The Brazilian Playbook",
+      "body": ["Everything that makes Brazil the greatest footballing nation. Nothing left out."],
+      "tiles": [
+        "Set Pieces — Deadly from every dead ball situation.",
+        "Global Reach — Brazilian players light up every league on earth.",
+        "Samba Flair — Play with rhythm, creativity, and pure joy.",
+        "Attack System — Multi-layered attacking threats from all positions.",
+        "Night Mode — Brazil thrives under the floodlights — every big game is a Brazil game.",
+        "Match Schedule — Every kick-off counts. Brazil plans for every round.",
+        "Kit Design — The yellow and green is the most iconic jersey in football history.",
+        "Fan Power — Empower the most passionate supporters on the planet.",
+        "Live Stats — Track every goal, assist, and save in real time.",
+        "Youth Academy — Brazil's next generation is already in training."
+      ]
+    },
+    {
+      "index": 3,
+      "className": "section container gap-xxl spacing-xxl layout-bento",
+      "purpose": "bento-map",
+      "heading": "The Road to Glory",
+      "body": [
+        "From the group stage to the final whistle — Brazil's journey runs through the heart of this great nation.",
+        "The Seleção is proudly made across all of Brazil."
+      ],
+      "items": ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Manaus", "Salvador"]
+    },
+    {
+      "index": 4,
+      "className": "section container center peek-background dark-scheme grid grid-4 gap-l spacing-xxl",
+      "purpose": "faq-dark",
+      "heading": "Tactics, Passion, and Pure Football",
+      "subheading": "The philosophy that turns eleven players into an unstoppable force.",
+      "faqs": [
+        { "q": "Why play defensively?", "a": "Brazil's best football has always been attacking. Sitting back is not in the DNA of the Seleção." },
+        { "q": "Is pressing the answer?", "a": "High press or patient build-up — Brazil's midfield can do both, adapting to any opponent's weak points." },
+        { "q": "Can the wingers decide it?", "a": "Brazil's wide players are match-winners. Speed, skill, and end product — every cross could be a trophy-winning assist." },
+        { "q": "Why trust the young stars?", "a": "Brazil's new generation carries the legacy with pride. Youth is not a weakness — it is the future of the Seleção." }
+      ]
+    },
+    {
+      "index": 5,
+      "className": "section",
+      "purpose": "editorial-text",
+      "headings": ["The Art of the Dribble", "The Spirit of the Maracanã"],
+      "body": [
+        "From Garrincha to Ronaldinho, Brazil has always produced players who make defenders look foolish. The dribble is not just a skill — it is an expression of freedom. Today's squad carries that tradition forward, entertaining the world one step-over at a time and reminding everyone why football is called the beautiful game.",
+        "Bring your own passion."
+      ]
+    },
+    {
+      "index": 6,
+      "className": "section center dark-scheme spacing-xxl has-background",
+      "purpose": "tabbed-dark",
+      "heading": "Something for everyone",
+      "tabs": ["Authors", "Developers", "Agents"],
+      "body": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
+    },
+    {
+      "index": 7,
+      "className": "section is-visible center container gap-xxl spacing-xxl",
+      "purpose": "text-video",
+      "heading": "Maybe you want to have a bit of text next to a video.",
+      "body": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]
+    },
+    {
+      "index": 8,
+      "className": "section container grid grid-2 gap-xxl spacing-xxl",
+      "purpose": "cards-demo",
+      "heading": "Cards",
+      "body": ["What if you could have cards inside a tab?"]
+    },
+    {
+      "index": 9,
+      "className": "section container spacing-xxl",
+      "purpose": "agent-section",
+      "heading": "You don't just have to be a human.",
+      "body": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
+    },
+    {
+      "index": 10,
+      "className": "section",
+      "purpose": "cta-band",
+      "ctas": [{ "label": "Get started with AEM", "href": "https://www.aem.live/developer/tutorial" }]
+    }
+  ],
+  "ctas": [
+    { "label": "Join the Journey", "href": "https://github.com/aemsites/author-kit", "className": "btn btn-accent" },
+    { "label": "Follow the Seleção", "href": "https://www.aem.live/", "className": "btn btn-accent" },
+    { "label": "Visit Adobe", "href": "https://www.adobe.com/", "className": "btn btn-accent" },
+    { "label": "Get started with AEM", "href": "https://www.aem.live/developer/tutorial", "className": "btn btn-accent" }
+  ],
+  "images": [
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_1300083772e9645ea9463e3ff16e3a87fec824b7c.jpg", "alt": "Speed and momentum on the pitch", "width": 1600, "height": 909, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_1a22b50c2d1a3e61cb6b1f4a1ce284a7475caa8bb.jpg", "alt": "Depth of squad", "width": 1600, "height": 1101, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_1896e26305d79be855074187be5fb49665a5190d1.jpg", "alt": "Tactical clarity", "width": 1600, "height": 889, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_1603e8a5fbbf063145148ad76dc2eecade1abb5d7.jpg", "alt": "Team unity", "width": 1600, "height": 1045, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_164c78460645750ef2645ce84d681b8ea84957a97.jpg", "alt": "Jogo Bonito", "width": 1600, "height": 1059, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_100771fec5bb7bb98fd37a35d6191f9e161044350.jpg", "alt": "Legacy of five World Cup titles", "width": 1600, "height": 1066, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_13c0f03af2cd9ddfe9f889bc0af4cad0c6e0abeb4.jpg", "alt": "Peak performance dial", "width": 1600, "height": 1120, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_164d8086eb0a3cd21aed5a218e62ab1a7f213905d.jpg", "alt": "Modular and adaptable play style", "width": 3000, "height": 2001, "loading": "lazy" },
+    { "src": "https://main--aemnew--leoadobe.aem.page/media_1ecd3a837193a501be079d228b29f5e4590aa89b5.jpg", "alt": null, "width": 3000, "height": 1682, "loading": "lazy" }
+  ],
+  "media": {
+    "svgIcons": 9,
+    "heroImage": "https://main--aemnew--leoadobe.aem.page/media_1674c029fe1c222fe6f72c3bf0ad7fdf41e16eca9.jpg"
+  }
+}

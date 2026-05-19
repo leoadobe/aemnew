@@ -1,0 +1,319 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "writtenAt": "2026-05-18T23:30:00Z",
+    "mode": "targeted-palette-rebrand",
+    "iaFidelity": "verbatim",
+    "density": "balanced",
+    "stardustVersion": "0.7.1"
+  },
+  "schemaVersion": 2,
+  "colors": {
+    "background": "oklch(99% 0 0)",
+    "verde": "oklch(57% 0.165 145)",
+    "amarelo": "oklch(91% 0.185 95)",
+    "azul": "oklch(22% 0.095 265)",
+    "text": "oklch(18% 0 0)",
+    "textOnDark": "oklch(99% 0 0)",
+    "surface": "oklch(97% 0.004 145)"
+  },
+  "typography": {
+    "headingFamily": "Montserrat",
+    "bodyFamily": "Montserrat",
+    "displayWeight": 900,
+    "headingWeight": 800,
+    "bodyWeight": 400,
+    "baseSize": "16px",
+    "scaleRatio": 1.25,
+    "headingSizes": {
+      "xxl": "48.83px",
+      "xl": "39.06px",
+      "l": "31.25px",
+      "m": "25px",
+      "s": "20px",
+      "xs": "16px"
+    },
+    "lineHeightHeading": 1.1,
+    "lineHeightBody": 1.6,
+    "variable": true,
+    "variableAxes": ["wght (100-900)"],
+    "variableSettings": {
+      "display": "\"wght\" 900",
+      "heading": "\"wght\" 800",
+      "subheading": "\"wght\" 700",
+      "body": "\"wght\" 400"
+    }
+  },
+  "rounded": {
+    "primary": "4px",
+    "card": "6px"
+  },
+  "spacing": {
+    "base": "4px",
+    "xs": "4px",
+    "s": "8px",
+    "m": "12px",
+    "l": "24px",
+    "xl": "32px",
+    "xxl": "64px",
+    "sectionPadding": {
+      "desktop": "64px",
+      "tablet": "48px",
+      "mobile": "32px"
+    }
+  },
+  "components": [
+    {
+      "name": "button-primary",
+      "selector": ".ds-btn.ds-btn-primary",
+      "properties": {
+        "background": "oklch(91% 0.185 95)",
+        "color": "oklch(22% 0.095 265)",
+        "borderRadius": "4px",
+        "fontVariationSettings": "\"wght\" 700",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.05em"
+      },
+      "html": "<a href=\"#\" class=\"ds-btn ds-btn-primary\">Junte-se à Jornada</a>",
+      "css": ".ds-btn-primary { background: oklch(91% 0.185 95); color: oklch(22% 0.095 265); font-variation-settings: \"wght\" 700; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; display: inline-block; }"
+    },
+    {
+      "name": "button-secondary",
+      "selector": ".ds-btn.ds-btn-secondary",
+      "properties": {
+        "background": "transparent",
+        "color": "oklch(22% 0.095 265)",
+        "border": "2px solid oklch(22% 0.095 265)",
+        "borderRadius": "4px",
+        "fontVariationSettings": "\"wght\" 700"
+      }
+    },
+    {
+      "name": "card",
+      "selector": ".ds-card",
+      "properties": {
+        "background": "oklch(99% 0 0)",
+        "borderLeft": "3px solid oklch(57% 0.165 145)",
+        "borderRadius": "6px",
+        "padding": "24px"
+      }
+    },
+    {
+      "name": "badge",
+      "selector": ".ds-badge",
+      "properties": {
+        "background": "oklch(57% 0.165 145)",
+        "color": "oklch(99% 0 0)",
+        "borderRadius": "4px",
+        "fontVariationSettings": "\"wght\" 700",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.08em"
+      }
+    },
+    {
+      "name": "link",
+      "properties": {
+        "color": "oklch(22% 0.095 265)",
+        "textDecoration": "underline on hover"
+      }
+    }
+  ],
+  "extensions": {
+    "colorMeta": {
+      "palette": "Brazilian national colors — verde, amarelo, azul",
+      "hexApprox": {
+        "verde": "#009C3B",
+        "amarelo": "#FFDF00",
+        "azul": "#002776"
+      },
+      "contrastAudit": {
+        "amarelo_on_azul": "13:1 AAA",
+        "white_on_azul": "13.5:1 AAA",
+        "verde_large_text_only": "3.1:1 large-text AA",
+        "text_on_white": "18:1 AAA"
+      },
+      "verdeRestriction": "Large text and decorative surfaces only — fails AA for body text",
+      "darkSectionGround": "azul replaces #000000 — warmer, distinctly national",
+      "lightDark": true,
+      "mechanism": "CSS light-dark() + .dark-scheme class (inherited)"
+    },
+    "typographyMeta": {
+      "keyMove": "Full variable weight engagement — wght 900 display, 800 headings (up from 600)",
+      "scaleRatioChange": "1.122 → 1.25 (committed expressive tier)",
+      "googleFonts": true,
+      "licensing": "OFL",
+      "monoFamily": null
+    },
+    "shadows": [],
+    "motion": {
+      "defaultDuration": "200ms",
+      "defaultEasing": "ease-out",
+      "reducedMotion": "respected via prefers-reduced-motion"
+    },
+    "breakpoints": {
+      "mobile": 600,
+      "tablet": 900,
+      "desktop": 1200,
+      "wide": 1440
+    },
+    "componentStyle": {
+      "buttons": {
+        "primary": {
+          "bg": "oklch(91% 0.185 95)",
+          "fg": "oklch(22% 0.095 265)",
+          "radius": "4px",
+          "weight": 700,
+          "textTransform": "uppercase"
+        },
+        "secondary": {
+          "bg": "transparent",
+          "fg": "oklch(22% 0.095 265)",
+          "border": "2px solid oklch(22% 0.095 265)",
+          "radius": "4px"
+        }
+      },
+      "cards": {
+        "bg": "oklch(99% 0 0)",
+        "borderLeft": "3px solid oklch(57% 0.165 145)",
+        "radius": "6px",
+        "padding": "24px"
+      },
+      "inputs": {},
+      "dualCTAPattern": false
+    },
+    "systemComponentRoles": {
+      "header": {
+        "purpose": "Site navigation and brand identity",
+        "positionClass": "fixed top",
+        "colorScheme": "azul background on scroll, transparent at top"
+      },
+      "footer": {
+        "purpose": "Legal links and copyright",
+        "positionClass": "page bottom",
+        "colorScheme": "azul background, white text"
+      },
+      "cta-band": {
+        "purpose": "Primary conversion section at page bottom",
+        "colorScheme": "amarelo background, azul text — maximum campaign energy"
+      }
+    },
+    "voice": {
+      "register": "sports campaign",
+      "tone": "bold, passionate, nationally proud, joyful",
+      "voiceRule": "Mixed-case headings ≥3 words. Uppercase for eyebrow labels ≤3 words and CTA button labels.",
+      "examples": {
+        "do": [
+          "Brazil Goes for the Championship",
+          "The Seleção is back. Six stars on the shirt, one dream in the heart.",
+          "Jogo Bonito was born here.",
+          "Join the Journey"
+        ],
+        "dont": [
+          "Leverage world-class football solutions",
+          "LIVE · 2' · 1-0 (score-ticker overlay)",
+          "The atelier of Brazilian football"
+        ]
+      }
+    },
+    "iaPriorities": [
+      {
+        "signal": "campaign-conversion",
+        "evidence": "pages/home.json#sections[0] — hero CTA 'Join the Journey' → github.com/aemsites/author-kit",
+        "preserveAs": "first-viewport",
+        "scope": "site-wide",
+        "mutability": "locked",
+        "note": "ia-fidelity: verbatim — CTA position locked. Target URL flagged as placeholder."
+      },
+      {
+        "signal": "audience-routing",
+        "evidence": "pages/home.json#sections[6] — 'Something for everyone' tabs: Authors / Developers / Agents",
+        "preserveAs": "below-fold",
+        "scope": "home",
+        "mutability": "locked",
+        "note": "ia-fidelity: verbatim — tab section position locked."
+      }
+    ],
+    "divergence": {
+      "mode": "targeted-palette-rebrand",
+      "modeReason": "User explicitly requested Brazilian national colors — overrides Mode A palette pin. Type pinned (brand-inherited).",
+      "seed": {
+        "decade": "2025-now",
+        "craft": "sports-campaign / CBF-kit-tradition",
+        "register": "Campaign",
+        "ground_family": "stark-white",
+        "ground_family_override": "brand-faithful",
+        "ground_family_override_reason": "Existing white ground preserved; azul used as alt-section surface"
+      },
+      "font_deck": {
+        "name": "brand-inherited",
+        "picked_by": "user-constraint",
+        "family": "Montserrat",
+        "keyMove": "wght 600 → wght 900 display / 800 headings"
+      },
+      "palette": {
+        "source": "Brazilian national colors (explicit user request)",
+        "picked_by": "user-explicit",
+        "previous": "purple #9d60d8 / magenta #bd0084",
+        "replaced_with": "verde #009C3B / amarelo #FFDF00 / azul #002776"
+      },
+      "brand_faithful_inversions": [
+        {
+          "category": "palette-replacement",
+          "description": "Full palette swap from purple/magenta to Brazilian national colors",
+          "justification": "User explicitly requested Brazilian colors — not a Mode A violation, is the direction"
+        },
+        {
+          "category": "pure-near-white",
+          "description": "background: oklch(99% 0 0) — near-white not pure white",
+          "justification": "Impeccable hard rule: no pure white/black"
+        }
+      ],
+      "anti_toolbox_hits": [
+        {
+          "pattern": "National-flag palette",
+          "hit": false,
+          "justification": "Brazilian colors are user-explicit and brand-specific to the World Cup campaign — not a reflex pick"
+        },
+        {
+          "pattern": "Hero text on photographic background",
+          "hit": true,
+          "mitigation": "Verde/azul gradient scrim required on all image overlays — specified in DESIGN.md § Motifs"
+        }
+      ]
+    }
+  },
+  "narrative": {
+    "northStar": "The Seleção's six-star destiny — expressed in verde, amarelo, and azul at full typographic weight.",
+    "overview": "Brazilian national palette replaces purple/magenta. Montserrat pushed to 900 for display. 11 sections unchanged in structure, transformed in surface. Azul dark sections replace black. Amarelo CTAs with azul text.",
+    "keyCharacteristics": [
+      "Brazilian national palette (verde / amarelo / azul) — no other hues",
+      "Montserrat wght 900 display — full variable font engagement",
+      "Type scale ratio 1.25 (up from 1.122) — committed expressive tier",
+      "Amarelo CTAs on azul text — 13:1 AAA contrast, unmistakably Brazilian",
+      "Azul replaces black for dark sections",
+      "Verde restricted to large text and decorative use (3.1:1 limit honored)"
+    ],
+    "rules": [
+      "Verde on body-size text is forbidden — large text and decorative only",
+      "Every image with overlaid text requires a verde/azul gradient scrim",
+      "CTAs are uppercase, amarelo background, azul text — no exceptions",
+      "Mixed-case headings ≥3 words; uppercase eyebrows ≤3 words",
+      "Section padding: 64px desktop / 48px tablet / 32px mobile (balanced, hard floor)"
+    ],
+    "dos": [
+      "Use Montserrat 900 for hero headlines — the font earns it",
+      "Use azul for dark section backgrounds (warmer than black, Brazilian)",
+      "Use amarelo sparingly — it earns its power through restraint",
+      "Use verde as a left-border accent on cards",
+      "Give football photography full width — min 480px card images, full-bleed hero"
+    ],
+    "donts": [
+      "Don't use verde as body text color",
+      "Don't put amarelo text on white backgrounds (fails contrast)",
+      "Don't use gradient text",
+      "Don't use glassmorphism",
+      "Don't add a second hue outside the three national colors",
+      "Don't use more than one CTA per section"
+    ]
+  }
+}

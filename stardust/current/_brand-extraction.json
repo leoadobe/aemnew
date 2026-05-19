@@ -1,0 +1,132 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-05-18T23:16:26.664Z",
+    "readArtifacts": ["stardust/current/pages/home.json"],
+    "aggregationScope": "single-page (home)",
+    "stardustVersion": "0.7.1",
+    "notes": "Single-page site; all brand aggregation from home only."
+  },
+  "brandSignal": "signal-strong",
+  "site": {
+    "name": "Author Kit",
+    "tagline": "The Seleção is back. Six stars on the shirt, one dream in the heart.",
+    "originUrl": "https://main--aemnew--leoadobe.aem.page/",
+    "register": "brand",
+    "theme": "Brazil World Cup — demo content overlaid on Author Kit product"
+  },
+  "logo": {
+    "type": "text",
+    "text": "Author Kit",
+    "source": "header nav brand link",
+    "localPath": null
+  },
+  "palette": [
+    { "role": "background", "value": "#ffffff", "source": "--color-background (light mode)", "frequency": "dominant" },
+    { "role": "surface-shaded", "value": "#f9f9f9", "source": "--color-shaded", "frequency": "high" },
+    { "role": "text", "value": "#1b1b1b", "source": "--color-gray-900 / --color-text", "frequency": "dominant" },
+    { "role": "brand", "value": "#9d60d8", "source": "--color-brand = --color-purple-500", "frequency": "medium" },
+    { "role": "accent", "value": "#bd0084", "source": "--color-accent = --color-magenta-600 (light)", "frequency": "medium" },
+    { "role": "surface-dark", "value": "#000000", "source": "--color-dark / dark sections", "frequency": "low" },
+    { "role": "text-on-dark", "value": "#ffffff", "source": "--color-light", "frequency": "medium" },
+    { "role": "border", "value": "rgba(0,0,0,0.1)", "source": "computed border", "frequency": "low" }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Montserrat",
+      "fallback": "\"Trebuchet MS\", sans-serif",
+      "variable": true,
+      "variableAxes": ["wght (100-900)"],
+      "source": "--font-family",
+      "localPath": null,
+      "licensing": "Google Fonts (OFL)"
+    },
+    "bodyFamily": {
+      "name": "Montserrat",
+      "fallback": "\"Trebuchet MS\", sans-serif",
+      "variable": true,
+      "variableAxes": ["wght (100-900)"],
+      "source": "--font-family",
+      "note": "Single font family for both headings and body"
+    },
+    "sizes": {
+      "headingXxl": "32.44px",
+      "headingXl": "28.83px",
+      "headingL": "25.63px",
+      "headingM": "22.78px",
+      "headingS": "20.25px",
+      "headingXs": "18px",
+      "bodyXxxl": "25px",
+      "bodyXxl": "22px",
+      "bodyXl": "20px",
+      "bodyL": "18px",
+      "bodyM": "16px",
+      "bodyS": "14px",
+      "bodyXs": "12px"
+    },
+    "headingLineHeight": 1.15,
+    "bodyLineHeight": 1.6,
+    "scaleAudit": {
+      "kind": "modular",
+      "ratio": 1.122,
+      "notes": "Heading scale ~1.122 ratio (32.44/28.83≈1.125); consistent modular scale"
+    }
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": null,
+      "source": "not prominently set in tokens",
+      "notes": "Buttons and cards likely use small radius; not extracted from CSS tokens"
+    },
+    "shadows": [],
+    "gradients": [],
+    "patterns": ["card-grid", "bento-layout", "hero-full-bleed", "tabs", "faq-accordion"]
+  },
+  "spacing": {
+    "base": "4px",
+    "scale": {
+      "xs": "4px",
+      "s": "8px",
+      "m": "12px",
+      "l": "24px",
+      "xl": "32px",
+      "xxl": "48px"
+    },
+    "sectionPadding": "48px (--spacing-xxl)",
+    "gridContainerWidth": "83.4%",
+    "gridColumns": 12
+  },
+  "voice": {
+    "heroHeadline": "Brazil Goes for the Championship",
+    "heroBody": "The Seleção is back. Six stars on the shirt, one dream in the heart.",
+    "ctaLabels": ["Join the Journey", "Follow the Seleção", "Get started with AEM", "Visit Adobe"],
+    "register": "energetic, aspirational, sports editorial",
+    "tone": "bold, passionate, confident",
+    "heroImage": "https://main--aemnew--leoadobe.aem.page/media_1674c029fe1c222fe6f72c3bf0ad7fdf41e16eca9.jpg"
+  },
+  "systemComponents": [
+    {
+      "kind": "header",
+      "selector": "header.header",
+      "content": "Author Kit brand + nav (Features, Docs, Get started) + theme toggle + language change",
+      "crossPage": true
+    },
+    {
+      "kind": "footer",
+      "selector": "footer.footer",
+      "content": "Adobe legal links + © 2025 Adobe. All Rights Reserved.",
+      "crossPage": true
+    }
+  ],
+  "darkMode": {
+    "supported": true,
+    "mechanism": "CSS light-dark() + .dark-scheme class on sections",
+    "notes": "Site uses CSS color-scheme light-dark() for automatic dark mode; some sections explicitly use dark-scheme class"
+  },
+  "aemSpecific": {
+    "platform": "AEM Edge Delivery Services",
+    "blockSystem": true,
+    "sectionClasses": ["container", "center", "grid", "grid-2", "grid-3", "grid-4", "gap-m", "gap-l", "gap-xxl", "spacing-xxl", "dark-scheme", "has-background", "layout-bento", "peek-background"],
+    "blocks": ["section-background", "default-content", "block-content"]
+  }
+}
