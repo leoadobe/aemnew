@@ -266,6 +266,16 @@
   color-scheme: dark;
 }
 
+.section.dark-scheme {
+  background-color: var(--color-brazil-blue);
+  --color-heading: var(--color-brazil-yellow);
+  --color-link: var(--color-brazil-yellow);
+}
+
+.section:first-child .hero {
+  --default-min-height: 70vh;
+}
+
 html {
   scroll-padding-top: calc(var(--header-height) + 1rem);
 }

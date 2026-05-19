@@ -4,7 +4,9 @@
   overflow-wrap: break-word;
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 12%);
   overflow: hidden;
-  background-color: light-dark(var(--color-gray-100), var(--color-gray-900));
+  background-color: oklch(99% 0 0);
+  border-left: 3px solid var(--color-verde, var(--color-brazil-green));
+  border-radius: 6px;
   color: light-dark(var(--color-dark), var(--color-light));
   transition: all 0.25s ease-in-out;
 
@@ -77,9 +79,17 @@
 
     box-shadow: initial;
     background-color: initial;
+    border-left: none;
+    border-radius: 0;
 
     .card-content-container * {
       margin: 6px;
     }
   }
+}
+
+.section.dark-scheme .card:not(.quiet) {
+  background-color: oklch(27% 0.06 265);
+  border-left-color: var(--color-amarelo, var(--color-brazil-yellow));
+  color: oklch(99% 0 0);
 }
