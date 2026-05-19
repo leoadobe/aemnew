@@ -21,6 +21,11 @@ header {
     border-bottom-color: var(--color-brazil-yellow);
   }
 
+  /* Reset section-metadata color overrides so header color: #fff cascades cleanly */
+  .section > * {
+    color: inherit;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -60,6 +65,7 @@ header {
       border: none;
       padding: 0;
       background-color: transparent;
+      color: inherit;
       height: 100%;
       width: 64px;
 
