@@ -272,8 +272,33 @@
   --color-link: var(--color-brazil-yellow);
 }
 
+.section:first-child {
+  margin-top: calc(-1 * var(--header-height));
+}
+
 .section:first-child .hero {
-  --default-min-height: 70vh;
+  --default-min-height: 80vh;
+}
+
+.section:last-child {
+  background-color: var(--color-brazil-yellow);
+  --color-heading: var(--color-brazil-blue);
+  --color-text: var(--color-brazil-blue);
+}
+
+.section:last-child .hero {
+  --gradient-start: rgba(0, 0, 0, 0);
+  --gradient-end: rgba(0, 0, 0, 0);
+}
+
+.section:last-child .hero-background {
+  display: none;
+}
+
+.section:last-child a.btn-accent {
+  background: var(--color-brazil-blue);
+  border-color: var(--color-brazil-blue);
+  color: var(--color-brazil-white);
 }
 
 html {

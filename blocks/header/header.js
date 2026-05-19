@@ -194,4 +194,8 @@ export default async function init(el) {
   } catch (e) {
     throw Error(e);
   }
+
+  const updateScrolled = () => el.classList.toggle('scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', updateScrolled, { passive: true });
+  updateScrolled();
 }
